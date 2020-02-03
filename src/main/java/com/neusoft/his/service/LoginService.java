@@ -1,5 +1,8 @@
 package com.neusoft.his.service;
 
-public class LoginService {
+import com.neusoft.his.entity.User;
+
+public interface LoginService {
+	public User selectUserByNameByPass(User user);
 
 }
