@@ -15,7 +15,7 @@ public class LoginController {
 	private LoginService loginService;
 
 	@RequestMapping("/login")
-	public User selectsysUserByNameByPass(@RequestBody User user) {
+	public User selectUserByNameByPass(@RequestBody User user) {
 		System.out.println(user.getUserName()+"---");
 		User result = loginService.selectUserByNameByPass(user);
 		return result;   
