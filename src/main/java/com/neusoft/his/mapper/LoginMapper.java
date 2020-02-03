@@ -7,7 +7,7 @@ import com.neusoft.his.entity.User;
 
 @Mapper
 public interface LoginMapper {
-	@Select("select * from user where username=#{username} and passwprd=#{password}")
+	@Select("select * from user where userName=#{userName} and passWord=#{passWord}")
 	public User selectUserByNameByPass(User user);
 
 }
